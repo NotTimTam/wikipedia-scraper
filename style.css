@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(20, 20, 20);
+}
+
+button{
+    border: none;
+    padding: 15px 32px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #0c0c0c;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.grid-item {
+    background-color: rgba(17, 17, 17, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.results {
+    width: 800px;
+    height: 500px;
+}
+
+.download {
+    visibility: hidden;
+}
+
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    max-width: 280px;
+    padding-top: 145px;
+    margin: auto;
+}

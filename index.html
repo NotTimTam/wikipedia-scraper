@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Scraper</title>
+
+    <link rel="stylesheet" href="style.css" id="stylesheet">
+</head>
+<body>
+    <h1 class="header">Wikipedia Scraper</h1>
+    <div class="grid-container">
+        <div class="grid-item" id="search-bar">
+            <h1>Search</h1>
+            <input type="text" autocomplete="off" class="input" id="input"></input>
+            <input type="checkbox" id="download-html" name="download-html" value="download-html">Download as HTML</input>
+            
+            <p><strong>Make sure you use this search bar, and not the one built in to wikipedia.</strong></p>
+            
+            <div class="download" id="download">
+                <h1>Download</h1>
+                <button onclick="trigger_download()">Download this Page</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <iframe id="frame" src="https://www.wikipedia.org/" class="results"></iframe>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
